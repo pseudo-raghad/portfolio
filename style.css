@@ -78,7 +78,7 @@
   animation: fadeInUp 0.5s ease-out forwards;
   animation-delay: 0.5s;
   opacity: 0; 
-  top: 16%;
+  top: 20%;
   left: 15%; 
   font-family: "Nanum Gothic", sans-serif;
   font-weight: 400;
@@ -90,7 +90,7 @@
   animation: fadeInUp 0.8s ease-out forwards;
   animation-delay: 1s;
   opacity: 0; 
-  top: 19%;
+  top: 23%;
   left: 30%; 
   font-family: "Nanum Gothic", sans-serif;
   font-weight: 400;
@@ -107,7 +107,56 @@
   animation: enterFromLeft 0.7s ease;
   border: 42px solid rgba(255, 255, 255, 0.7);
   width: 100vw;
-  top: 15%;
+  top: 19%;
+}
+
+.extra-buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+.download-resume {
+  position: absolute;
+  margin-top: 20px;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.4);
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  display: flex;
+  border-radius: 13px;
+  border:2px solid #385752;
+  top: 30%;
+  left: 52%;
+}
+.download-resume:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+}
+
+.contact {
+  position: absolute;
+  margin-top: 20px;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.4);
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  display: flex;
+  border-radius: 13px;
+  border:2px solid #385752;
+  top: 30%;
+  left: 37%;
+}
+.contact:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
 }
 
 .bio {
@@ -225,7 +274,6 @@
   box-sizing: border-box; 
 }
 
-
 .contact-form button {
   font-family: "Karla", sans-serif;
   width: 80%;
@@ -237,6 +285,64 @@
   cursor: pointer;
   font-size: 16px;
 }
+
+section {
+  padding: 50px 20px;
+  background-color: #f4f4f4;
+  margin-bottom: 50px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: #37414a;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.skill-box {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 4px 4px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin: 10px;
+  flex-basis: 60%;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.skill-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.skill-box i.icon {
+  font-size: 2rem;
+  color: #2b6f9c;
+  margin-bottom: 10px;
+}
+
+.skill-box span {
+  display: block;
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: #080f19;
+}
+
+/* Different background colors for each section */
+.technical-skills {
+  background-color: #e3f2fd; /* Light blue for technical skills */
+}
+
+.other-skills {
+  background-color: #fce4ec; /* Light pink for other skills */
+}
+
 
 .skills-title {
 text-align: center;
